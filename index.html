@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Для тебя, малыш ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topline">
+      <span class="tiny-heart">♡</span>
+      <span>МАЛЕНЬКОЕ УТРО ДЛЯ ТЕБЯ</span>
+      <span class="tiny-heart">♡</span>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="sun-mark" aria-hidden="true">☼</div>
+      <p class="eyebrow">доброе утро,</p>
+      <h1>малыш<span>♡</span></h1>
+      <p class="intro">Я кое-что приготовил для тебя.<br>Это займёт всего минутку, но я надеюсь,<br>что улыбка останется надолго.</p>
+      <button class="primary" id="startBtn">Начать маленькое приключение <span>↗</span></button>
+      <div class="hero-note">сделано с теплом и мыслями о тебе</div>
+    </section>
+
+    <section class="game hidden" id="game" aria-live="polite">
+      <div class="progress"><span id="progressFill"></span></div>
+      <p class="eyebrow" id="stepLabel">МИНУТКА СЧАСТЬЯ · 01 / 03</p>
+      <h2 id="question">Что сегодня выбирает твоё настроение?</h2>
+      <p class="game-hint" id="hint">Выбери то, что больше откликается ♡</p>
+      <div class="choices" id="choices"></div>
+      <p class="micro" id="micro">Тут нет неправильных ответов.</p>
+    </section>
+
+    <section class="result hidden" id="result">
+      <div class="result-flower">✿</div>
+      <p class="eyebrow">ТВОЙ МАЛЕНЬКИЙ ПОДАРОК</p>
+      <h2>Ты — моё<br><em>любимое чудо.</em></h2>
+      <p class="result-copy">Малыш, пусть сегодня у тебя всё получается легко. Пусть кофе будет вкусным, люди — добрыми, а поводов улыбнуться будет чуть больше обычного.</p>
+      <div class="note-card">
+        <span class="note-label">и кое-что важное</span>
+        <p>Я просто хотел напомнить, что ты очень-очень особенная для меня. Хорошего утра, моя хорошая. ♡</p>
+        <span class="signature">обнимаю · крепко</span>
+      </div>
+      <button class="again" id="againBtn">Сыграть ещё раз ↻</button>
+    </section>
+
+    <footer>made with love <span>♡</span></footer>
+  </main>
+  <div class="toast" id="toast">Правильный выбор — тот, который сделала ты ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
